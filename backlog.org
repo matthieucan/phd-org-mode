@@ -1,0 +1,8 @@
+Here I keep all the miscellaneous TODOs. Convenient for deadlines far
+ahead in the future.
+
+* DONE Some item
+
+* TODO Finish some item
+  DEADLINE: <2016-11-04 Fri>
+  Description...

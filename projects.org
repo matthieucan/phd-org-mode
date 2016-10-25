@@ -1,0 +1,9 @@
+Random project ideas, let's not forget about them.
+
+* Awesome project 1
+** Description
+** Requirements
+
+* Awesome project 2
+** Description
+** Requirements

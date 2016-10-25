@@ -1,0 +1,26 @@
+My research papers, experiments, etc.
+
+* Experiments
+** Experiments ideas
+*** Idea 1
+*** Idea 2
+** Cluster setup
+   Setup description
+** Experiment 1: push FooBar to its CPU limits
+*Story*: Blabla…
+*Rationale*: Blabla…
+*** Preparation
+*** Running
+*** Results analysis
+
+* Software
+** lib-foobar
+   Blabla…
+
+* Papers
+** My first paper
+   DEADLINE: <2016-11-25 Fri>
+*** TODO Add paragraph about foo and bar
+
+* Random ideas
+** Try with Barfoo

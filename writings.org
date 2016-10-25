@@ -1,0 +1,4 @@
+Everything I write but papers.
+
+* Blog drafts
+** TODO Blog on the relations between foo and bar

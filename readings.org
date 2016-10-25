@@ -1,0 +1,21 @@
+Papers and books I read, along with my notes about them.
+
+* DONE Awesome Paper To Read: Foo and Bar Are FooBar
+** Question
+   Given the state of Foobar today, what are the available and most
+   efficient optimizations?
+** Notes
+   …
+** Results
+   Experiments show…
+** Conclusion
+   It works…
+
+* TODO Another Paper To Read
+  SCHEDULED: <2016-10-25 Tue 11:00>
+  Published in AwesomeConf16
+** Questions
+** Notes
+** Results
+** Evaluation
+** Conclusion

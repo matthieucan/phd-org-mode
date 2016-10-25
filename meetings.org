@@ -1,0 +1,20 @@
+Everybody I meet professionnally. Notes about all meetings.
+
+* Recurrent events
+** Meet PhD supervisor
+   <2016-10-25 Tue 10:00 +1w>
+** Research team meeting
+   <2016-10-19 Wed 09:00 +1m>
+
+* Meetings notes
+** First meeting
+   <2016-10-19 Wed 12:00>
+   We talked about…
+** Second meeting
+   <2016-11-04 Fri 15:00>
+
+* Meetups
+** Foobar meetup group
+*** Current state of foobar and future
+    <2016-11-07 Mon 19:00>
+    Notes…

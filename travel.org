@@ -1,0 +1,6 @@
+Conferences, workshops, etc.
+
+* Foobar conference
+  <2016-11-08 Tue 09:00>--<2016-11-11 Fri 17:00>
+** TODO Prepare slides
+   DEADLINE: <2016-11-07 Mon>
