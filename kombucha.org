@@ -1,0 +1,85 @@
+# -*- org-todo-keyword-faces: (("JAR" . "red") ("BOTTLE" . "red") ("FRIDGE" . "yellow") ("PAST" . "green")); org-capture-templates: (("k" "Kombucha" entry (file buffer-file-name) "* JAR Batch\nDEADLINE: %(org-insert-timestamp (org-read-date nil t \"+7d\"))\n:PROPERTIES:\n:JAR_AT: %u\n:JAR: %?\n:SUGAR: \n:INGREDIENTS: \n:BOTTLE_AT: \n:BOTTLE: \n:RATING: \n:END:" :prepend t :empty-lines 1 :after-finalize (lambda () (org-update-all-dblocks)))); -*-
+
+#+TITLE: Kombucha dashboard
+#+FILETAGS: food
+#+TODO: JAR | BOTTLE(!) FRIDGE(!) PAST(!)
+#+COLUMNS: %TODO(State) %ITEM(Item) %JAR_AT(Jarred at) %JAR(J) %SUGAR(Sugar) %INGREDIENTS(Ing) %BOTTLE_AT(Bottled at) %BOTTLE(B) %RATING(RTG)
+
+#+BEGIN: columnview :id "file:kombucha.org" :hlines 1 :match "TODO<>{PAST}"
+#+CAPTION: Current kombucha ferments
+| State  | Item     | Jarred at        | J | Sugar | Ing   | Bottled at       | B | RTG |
+|--------+----------+------------------+---+-------+-------+------------------+---+-----|
+| JAR    | Batch #4 | [2025-08-24 Sun] | 1 |    70 | apple |                  |   |     |
+|--------+----------+------------------+---+-------+-------+------------------+---+-----|
+| BOTTLE | Batch #3 | [2025-08-17 Sun] | 1 |    60 | nil   | [2025-08-24 Sun] | 1 |     |
+|--------+----------+------------------+---+-------+-------+------------------+---+-----|
+| FRIDGE | Batch #2 | [2025-08-10 Sun] | 1 |    60 | nil   | [2025-08-17 Sun] | 1 |   8 |
+#+END:
+
+#+BEGIN: columnview :id "file:kombucha.org" :hlines 1 :match "TODO={PAST}"
+#+CAPTION: Past kombucha ferments
+| State | Item     | Jarred at        | J | Sugar | Ing | Bottled at       | B | RTG |
+|-------+----------+------------------+---+-------+-----+------------------+---+-----|
+| PAST  | Batch #1 | [2025-08-03 Sun] | 1 |    75 | nil | [2025-08-10 Sun] | 1 |   7 |
+#+END:
+
+* JAR Batch #4
+DEADLINE: <2025-08-31 Sun>
+:PROPERTIES:
+:JAR_AT: [2025-08-24 Sun]
+:JAR: 1
+:SUGAR: 70
+:INGREDIENTS: apple
+:BOTTLE_AT: 
+:BOTTLE: 
+:RATING: 
+:END:
+
+* BOTTLE Batch #3
+CLOSED: [2025-08-24 Sun 21:00] DEADLINE: <2025-08-24 Sun>
+:PROPERTIES:
+:JAR_AT: [2025-08-17 Sun]
+:JAR: 1
+:SUGAR: 60
+:INGREDIENTS: nil
+:BOTTLE_AT: [2025-08-24 Sun]
+:BOTTLE: 1
+:RATING: 
+:END:
+:LOGBOOK:
+- State "BOTTLE"     from "JAR"        [2025-08-24 Sun 21:00]
+:END:
+
+* FRIDGE Batch #2
+CLOSED: [2025-08-17 Sun 21:00] DEADLINE: <2025-08-17 Sun>
+:PROPERTIES:
+:JAR_AT: [2025-08-10 Sun]
+:JAR: 1
+:SUGAR: 60
+:INGREDIENTS: nil
+:BOTTLE_AT: [2025-08-17 Sun]
+:BOTTLE: 1
+:RATING: 8
+:END:
+:LOGBOOK:
+- State "FRIDGE"     from "BOTTLE"     [2025-08-24 Sun 21:00]
+- State "BOTTLE"     from "JAR"        [2025-08-17 Sun 21:00]
+:END:
+
+* PAST Batch #1
+CLOSED: [2025-08-10 Sun 21:00] DEADLINE: <2025-08-10 Sun>
+:PROPERTIES:
+:JAR_AT: [2025-08-03 Sun]
+:JAR: 1
+:SUGAR: 75
+:INGREDIENTS: nil
+:BOTTLE_AT: [2025-08-10 Sun]
+:BOTTLE: 1
+:RATING: 7
+:END:
+:LOGBOOK:
+- State "PAST"       from "FRIDGE"     [2025-08-20 Wed 13:00]
+- State "FRIDGE"     from "BOTTLE"     [2025-08-17 Sun 21:00]
+- State "BOTTLE"     from "JAR"        [2025-08-10 Sun 21:00]
+:END:
+
